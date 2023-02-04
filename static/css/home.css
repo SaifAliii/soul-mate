@@ -1,0 +1,530 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.age{
+    display: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 40px;
+    background-color: #e87463;
+    width: 160px;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.age:hover .filter-age-dropdown{
+    display: block;
+}
+
+.age button{
+    color: white;
+    background-color: #e87463;
+    border: none;
+    width: 160px;
+    text-align: left;
+}
+
+.age button:hover{
+    background-color: #ec9a86;
+}
+
+.age .caret{
+    margin-left: 86px;
+}
+
+.age input{
+    margin-bottom: 0.3rem;
+}
+
+.area{
+    display: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 40px;
+    background-color: #e87463;
+    opacity: 0;
+    width: 160px;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.area:hover .filter-area-dropdown{
+    display: block;
+}
+
+.area button{
+    color: white;
+    background-color: #e87463;
+    border: none;
+    width: 160px;
+    text-align: left;
+}
+
+.area button:hover{
+    background-color: #ec9a86;
+}
+
+.area .caret{
+    margin-left: 87px;
+}
+
+.area input{
+    margin-bottom: 0.3rem;
+}
+
+body{
+    color: white;
+    background-image: url("../css/soulMatebg.png");
+    background-size: 100%;
+    padding-left: 8px;
+    margin-left: 150px;
+    overflow: hidden;
+}
+
+.button-container .button{
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+
+.button-container .button::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,1);
+    border-radius: 50%;
+    z-index: -99;
+}
+
+.button-container .button:hover{
+    opacity: 1;
+}
+
+.button-container .button:nth-child(1){
+    float: left;
+}
+.button-container .button:nth-child(2){
+    float: right;
+}
+
+.caret{
+    margin-left: 38px;
+}
+
+.cast{
+    display: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 40px;
+    background-color: #e87463;
+    width: 160px;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.cast:hover .filter-cast-dropdown{
+    display: block;
+}
+
+.cast button{
+    color: white;
+    background-color: #e87463;
+    border: none;
+    width: 160px;
+    text-align: left;
+}
+
+.cast button:hover{
+    background-color: #ec9a86;
+}
+
+.cast .caret{
+    margin-left: 84px;
+}
+
+.connection-information{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    background-color: #ffffff;
+    font-size: 17px;
+    color: black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-left: -130px;
+    margin-top: -98px;
+    opacity: 0;
+    display: block;
+    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
+    text-align: center;
+}
+
+.connection-information:hover{
+    display: block;
+    animation: showConnectionInfo 600ms 120ms ease-in-out forwards;
+}
+
+.connection-information #age{
+    text-shadow: #201F15;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -140px;
+    margin-top: -100px;
+}
+
+.container .button-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 372px;
+    z-index: 100;
+    margin-left: -498px;
+    margin-top: 152px;
+}
+
+.container .slide{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 1;
+    background-color: #201F15;
+}
+
+.filter:hover{
+    background-color: #ec9a86;
+}
+
+.filter-age-dropdown{
+    display: none;  
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -26px;
+    background-color: #ec9a86;
+    padding: 1rem;
+    width: 16rem;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.filter-area-dropdown{
+    display: none;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -26px;
+    background-color: #ec9a86;
+    padding: 1rem;
+    width: 16rem;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.filter-cast-dropdown{
+    display: none;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -26px;
+    background-color: #ec9a86;
+    padding: 1rem;
+    width: 16rem;
+    text-align: left;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.filter-dropdown{
+    height: 40px;
+}
+
+.filter-dropdown:hover .age{
+    display: block;
+}
+
+.filter-dropdown:hover .area{
+    display: block;
+}
+
+.filter-dropdown:hover .cast{
+    display: block;
+}
+
+.filter-dropdown:hover .height{
+    display: block;
+}
+
+.filter-dropdown:hover .profession{
+    display: block;
+}
+
+.filter-dropdown:hover .religon{
+    display: block;
+}
+
+.filter-height-dropdown{
+    display: none;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -26px;
+    background-color: #ec9a86;
+    padding: 1rem;
+    width: 16rem;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.filter-profession-dropdown{
+    display: none;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -26px;
+    background-color: #ec9a86;
+    padding: 1rem;
+    width: 16rem;
+    text-align: left;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.filter-religon-dropdown{
+    display: none;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: -26px;
+    background-color: #ec9a86;
+    padding: 1rem;
+    width: 16rem;
+    text-align: left;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.height{
+    display: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 40px;
+    background-color: #e87463;
+    width: 160px;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.height:hover .filter-height-dropdown{
+    display: block;
+}
+
+.height button{
+    color: white;
+    background-color: #e87463;
+    border: none;
+    width: 160px;
+    text-align: left;
+}
+
+.height button:hover{
+    background-color: #ec9a86;
+}
+
+
+.height .caret{
+    margin-left: 66px;
+}
+
+.home{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: -146px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    display: inline;
+    float: right;
+    position: absolute;
+    margin-top: 35px;
+}
+
+@keyframes rotateY {
+    0% {
+        opacity: 0;
+        transform: rotateY(-90deg);
+    }
+
+    50% {
+        transform: rotateY(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes showConnectionInfo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        border-radius: 0%;
+    }
+}
+
+@keyframes showSlowely {
+   from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+li{
+    display: inline;
+    float: right;
+    color: white;
+    height: 44px;
+    border-right: 1px solid white;
+    padding: 8px;
+    width: 160px;
+    position: relative;
+
+}
+
+.logout{
+    border: none;
+}
+
+.main-content{
+    display: block;
+    margin-top: 50px;
+}
+
+.main-content h1{
+    font-family: 'Sacramento', cursive;
+}
+
+#name{
+    font-size: 26px;
+}
+
+.navbar{
+    margin-left: 200px;
+}
+
+.profession{
+    display: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 40px;
+    background-color: #e87463;
+    width: 160px;
+    text-align: left;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.profession:hover{
+    background-color: #ec9a86;
+}
+
+.profession:hover .filter-profession-dropdown{
+    display: block;
+}
+
+.profession button{
+    color: white;
+    background-color: #e87463;
+    border: none;
+    text-align: left;
+}
+
+.profession button:hover{
+    background-color: #ec9a86;
+}
+
+.religon{
+    display: none;
+    position: absolute;
+    margin-left: 28px;
+    margin-top: 40px;
+    background-color: #e87463;
+    width: 160px;
+    opacity: 0;
+    animation: showSlowely 300ms 60ms ease-in-out forwards;
+}
+
+.religon:hover .filter-religon-dropdown{
+    display: block;
+}
+
+.religon button{
+    color: white;
+    background-color: #e87463;
+    border: none;
+    width: 160px;
+    text-align: left;
+}
+
+.religon  button:hover{
+    background-color: #ec9a86;
+}
+
+.religon .caret{
+    margin-left: 62px;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+    box-shadow: 0px, 0px, 105px, -35px rgba(0,0,0,0.75);
+}
+
+.slide.next{
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(75%, 0%);
+}
+
+.slide.prev{
+    z-index: 2;
+    opacity: 0.25;
+    transform: translate(-75%, 0%);
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 0px;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 8px;
+    width: 100%;
+    text-align: center;
+    margin-right: 150px;
+    margin-top: 40px;
+}
