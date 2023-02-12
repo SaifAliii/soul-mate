@@ -12,6 +12,7 @@ a{
     width: 160px;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2;
 }
 
 .age:hover .filter-age-dropdown{
@@ -24,6 +25,7 @@ a{
     border: none;
     width: 160px;
     text-align: left;
+    z-index: 2;
 }
 
 .age button:hover{
@@ -47,6 +49,7 @@ a{
     opacity: 0;
     width: 160px;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2000;
 }
 
 .area:hover .filter-area-dropdown{
@@ -59,6 +62,7 @@ a{
     border: none;
     width: 160px;
     text-align: left;
+    z-index: 2;
 }
 
 .area button:hover{
@@ -128,6 +132,7 @@ body{
     width: 160px;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2000;
 }
 
 .cast:hover .filter-cast-dropdown{
@@ -140,6 +145,7 @@ body{
     border: none;
     width: 160px;
     text-align: left;
+    z-index: 2;
 }
 
 .cast button:hover{
@@ -157,25 +163,22 @@ body{
     z-index: 1000;
     background-color: #ffffff;
     font-size: 17px;
-    color: black;
+    color:#ec9a86;
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    margin-left: -130px;
-    margin-top: -98px;
+    margin-left: -127px;
+    margin-top: -100px;
     opacity: 0;
     display: block;
-    box-shadow: 3px 3px 10px black, -3px -3px 10px black;
     text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 22px;
 }
 
 .connection-information:hover{
     display: block;
     animation: showConnectionInfo 600ms 120ms ease-in-out forwards;
-}
-
-.connection-information #age{
-    text-shadow: #201F15;
 }
 
 .container{
@@ -223,6 +226,7 @@ body{
     width: 16rem;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2;
 }
 
 .filter-area-dropdown{
@@ -235,6 +239,7 @@ body{
     width: 16rem;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2000;
 }
 
 .filter-cast-dropdown{
@@ -288,6 +293,7 @@ body{
     width: 16rem;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2;
 }
 
 .filter-profession-dropdown{
@@ -301,13 +307,14 @@ body{
     text-align: left;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2;
 }
 
 .filter-religon-dropdown{
     display: none;
     position: absolute;
     margin-left: 160px;
-    margin-top: -26px;
+    margin-top: -24px;
     background-color: #ec9a86;
     padding: 1rem;
     width: 16rem;
@@ -325,6 +332,15 @@ body{
     width: 160px;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2000;
+}
+
+.height-btn{
+    background-color: #e87463;
+}
+
+.height-btn:hover{
+    background-color: #ec9a86;
 }
 
 .height:hover .filter-height-dropdown{
@@ -333,19 +349,26 @@ body{
 
 .height button{
     color: white;
-    background-color: #e87463;
     border: none;
     width: 160px;
     text-align: left;
+    z-index: 2;
 }
 
-.height button:hover{
-    background-color: #ec9a86;
-}
-
+/* .height button:hover{
+    background-color: #e87463;
+} */
 
 .height .caret{
     margin-left: 66px;
+}
+
+.height-dropdown{
+    background-color: #ec9a86;
+}
+
+.height-dropdown:hover{
+    background-color: #e87463;
 }
 
 .home{
@@ -385,7 +408,7 @@ img{
     }
     100%{
         opacity: 1;
-        border-radius: 0%;
+        border-radius: 10px;
     }
 }
 
@@ -442,6 +465,7 @@ li{
     text-align: left;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2000;
 }
 
 .profession:hover{
@@ -457,6 +481,7 @@ li{
     background-color: #e87463;
     border: none;
     text-align: left;
+    z-index: 2;
 }
 
 .profession button:hover{
@@ -472,6 +497,7 @@ li{
     width: 160px;
     opacity: 0;
     animation: showSlowely 300ms 60ms ease-in-out forwards;
+    z-index: 2000;
 }
 
 .religon:hover .filter-religon-dropdown{
@@ -484,6 +510,7 @@ li{
     border: none;
     width: 160px;
     text-align: left;
+    z-index: 2000;
 }
 
 .religon  button:hover{

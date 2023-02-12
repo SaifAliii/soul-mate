@@ -5,13 +5,32 @@ a{
 
 body{
     color: white;
-    background-image: url("../css/soulMatebg.png");
-    background-size: 100%;
     padding-left: 8px;
     margin-left: 150px;
-    overflow: hidden;
+    background-color: #e56255;
 }
 
+.btn1{
+    background-color: white;
+    width: 80px;
+    border-radius: 20px;
+    margin-left: 110px;
+    margin-top: 10px;
+    background-color: #ec9a86;
+    color: white;
+    border: 1px solid white;
+}
+
+.btn2{
+    background-color: white;
+    width: 80px;
+    border-radius: 20px;
+    margin-left: 120px;
+    margin-top: 10px;
+    background-color: #ec9a86;
+    color: white;
+    border: 1px solid white;
+}
 #btn-img{
     position: absolute;
     color: rgb(0, 0, 0);
@@ -22,10 +41,6 @@ body{
     width: 45px;
     height: 45px;
     border: none;
-}
-
-.c-button{
-    background-color: white;
 }
 
 .c-button:hover{
@@ -45,7 +60,7 @@ body{
     font-size: 18px;
     width: 175px;
     border: none;
-    color: #e56255;
+    color: #ec9a86;
     z-index: 1;
 }
 
@@ -56,33 +71,65 @@ body{
     margin-right: 10px;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px #ec9a86;
 }
 
 #connections-tag{
-    color: #e56255;
+    color: #ec9a86;
 }
 
 #container-img:hover{
     animation: showSlowly 1s forwards ease-in-out;
 }  
 
-#first-row{
-    margin-top: 10px;
+.friends{
+    height: 100px;
+    width: 100px;
 }
+
+.friend-div{
+    background-color: white;
+    width: 580px;
+    margin: 2px 2px;
+    padding: 10px;
+    border-radius: 10px;
+    /* border: 1px solid #ec9a86; */
+    box-shadow: 0px 0px 05px black;
+}
+
+.friend-div h4{
+    color:rgb(0, 0, 0);
+    display: inline;
+    margin-left: 15px;
+    position: absolute;
+    margin-top: 35px;
+}
+
+.friend-div button{
+    background-color: white;
+    display: inline;
+    margin-left: 400px;
+    margin-top: 35px;
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.friend-div button:hover{
+    background-color: rgb(244, 240, 240);
+}
+
 
 h1{
     font-family: 'Anton', sans-serif;
     font-size: 50px;
 }
 
-img{
-    height: 100px;
-    width: 100px;
-    display: inline;
-    float: right;
-    position: absolute;
-    margin-top: 35px;
+input{
+    width: 200px;
+    border-radius: 20px;
+    border: none;
 }
 
 @keyframes hideUserInfo {
@@ -99,8 +146,8 @@ img{
         height: 450px;
         width: 450px;
         background-color: #f8f4f4;
-        color: #e56255;
-        box-shadow: 0px 0px 5px black;
+        color: #ec9a86;
+        box-shadow: 0px 0px 5px #ec9a86;
         border-radius: 10px;
         margin-top: -50px;
         margin-left: -100px;
@@ -114,7 +161,7 @@ img{
 @keyframes showUserInfo{
     100%{
         opacity: 1;
-        color: #e56255;
+        color: #ec9a86;
         visibility: visible;
     }
 }
@@ -131,8 +178,26 @@ li{
 
 }
 
+.logo{
+    height: 100px;
+    width: 100px;
+    display: inline;
+    float: right;
+    position: absolute;
+    margin-top: 18px;
+} 
+
 .logout{
     border: none;
+}
+
+.main-content{
+    background-color: white;
+    border-radius: 10px;
+    width: 1200px;
+    padding: 15px;
+    margin-top: 60px;
+    border: 1px solid #6e6a69;
 }
 
 .main-img{
@@ -175,9 +240,19 @@ li{
     font-size: 40px;
 }
 
-table{
-    position: absolute;
-    margin-top: 25px;
+.special-features{
+    margin-left: 330px;
+    margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.first-form{
+    display: inline;
+}
+
+.second-form{
+    margin-top: -67px;
+    margin-left: 50px;
+    margin-left: 275px;
 }
 
 ul{
@@ -189,6 +264,20 @@ ul{
     margin-top: 40px;
 }
 
+.unfriend-div{
+    color: black;
+    background-color: white;
+    width: 230px;
+    padding: 0px 10px;
+    margin-left: 500px;
+    position: absolute;
+    margin-top: -50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px black;
+    visibility: hidden;
+}
+
+
 .user-info{
     width: 700px;
     height: 450px;
@@ -196,9 +285,9 @@ ul{
     position: relative;
     margin-top: 33px;
     margin-left: 470px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 0px 0px 5px #ec9a86;
     border-radius: 10px;
-    color: #e56255;
+    color: #ec9a86;
     padding-left: 20px;
 }
 
